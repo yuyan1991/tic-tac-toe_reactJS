@@ -4,11 +4,8 @@
   "description": "reference: https://www.reactjscn.com/tutorial/tutorial.html",
   "main": "index.js",
   "scripts": {
-    "start": "node src/main/server.js",
-    "test": "exit 0",
-    "lint": "eslint **/*.js",
-    "lint-html": "eslint **/*.js -f html -o ./reports/lint-results.html",
-    "lint-fix": "eslint --fix **/*.js"
+    "start": "webpack",
+    "test": "exit 0"
   },
   "repository": {
     "type": "git",
@@ -22,15 +19,10 @@
   },
   "homepage": "https://github.com/yuyan1991/tic-tac-toe_reactJS#readme",
   "devDependencies": {
-    "chai": "^4.2.0",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "mocha": "^6.1.1",
-    "nightmare": "^3.0.1"
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   },
   "dependencies": {
-    "http-server": "^0.11.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
